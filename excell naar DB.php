@@ -2,9 +2,9 @@
 
 	// Verbinding maken met de database
 	$servername = "localhost";  // Hostname
-	$username = "username";      // Gebruikersnaam
-	$password = "password";      // Wachtwoord
-	$dbname = "database_name";   // Naam van de database
+	$username = "root";      // Gebruikersnaam
+	$password = "";      // Wachtwoord
+	$dbname = "db_materiaal";   // Naam van de database
 
 	// Maak verbinding met de database
 	$conn = new mysqli($servername, $username, $password, $dbname);
@@ -15,10 +15,10 @@
 	}
 
 	// Bestandpad naar de Excel-lijst
-	$file = 'path/to/excel/file.xlsx';
+	$file = 'C:\Users\dvand\Documents\6I²CT\Test.xlsx';
 
 	// Laad de PHPExcel bibliotheek
-	require_once 'path/to/PHPExcel/Classes/PHPExcel.php';
+	require_once 'C:\Users\dvand\Documents\6I²CT\PHPExcel-1.8\Classes\PHPExcel.php';
 
 	// Lees de Excel-lijst
 	$objPHPExcel = PHPExcel_IOFactory::load($file);
